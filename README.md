@@ -34,18 +34,15 @@ cd lumen
 Open the `.env` file and fill in the values:
 
 ```
-LEARNING_TOKEN=       ← paste from lumen-prep.vercel.app (log in → Copy token)
+LEARNING_TOKEN=       ← paste from Lumen-Prep (log in → Copy token from header)
 ANTHROPIC_API_KEY=    ← only if using Claude Code on a personal machine
 ```
 
 > On an office/enterprise laptop with Claude Code already set up? You only need `LEARNING_TOKEN`.
 
-### Step 3 — Open in your AI tool
+### Step 3 — Open this Repo in VS Code
 
-**Claude Code**
-```bash
-claude
-```
+**Claude** — Start learning using Claude Code IDE extension or from terminal.
 
 **Cursor or Windsurf** — open the folder, switch to Agent mode, and start chatting.
 
@@ -56,7 +53,7 @@ Just say what you want:
 ```
 Let's work on system design
 Test me on Java
-Pick up where we left off
+Pick up where we left off in Angular
 ```
 
 ---
