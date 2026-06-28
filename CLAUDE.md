@@ -24,7 +24,7 @@ If any API call returns a 401, the token in `.env` has expired. Do this immediat
 2. Tell the user exactly this:
 
 > Your session token has expired. Here's how to get a new one:
-> 1. Open the dashboard at `https://learning-ui-peach.vercel.app` in your browser
+> 1. Open the dashboard at `https://lumen-prep.vercel.app` in your browser
 > 2. Log in with Google if prompted
 > 3. Click **Copy token** in the top-right of the header
 > 4. Open `.env` in this repo and update the line:

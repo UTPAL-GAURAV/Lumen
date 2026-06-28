@@ -15,7 +15,7 @@
   ## Requirements
   
   - [Claude Code](https://claude.ai/code) (CLI or VS Code extension)
-  - A Lumen account — sign up at [learning-ui-peach.vercel.app](https://learning-ui-peach.vercel.app)
+  - A Lumen account — sign up at [Lumen-prep](https://lumen-prep.vercel.app)
 
   ## Setup
 
