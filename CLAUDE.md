@@ -225,7 +225,8 @@ If the session doesn't exist yet: `POST /api/sessions` with a full syllabus for 
 
 **Notes** (`PATCH /api/sessions/:topicSlug`):
 - Cheat-sheet format: definition → when-to-use → key variants → trade-offs → gotchas
-- Append only — don't repeat what's already there
+- **APPEND ONLY — never overwrite or condense existing notes.** Always fetch current notes via `GET /api/sessions/:topicSlug` first, then append the new sub-topic section at the end. Only rewrite a section when the user explicitly asks to revisit or update that specific sub-topic.
+- **Every sub-topic must produce notes.** After teaching any sub-topic, always write notes for it — never skip a sub-topic because it "felt conversational" or "was covered quickly." If the user answered a scenario question, that sub-topic was taught and notes must be written.
 - Write visually, not as monotonous bullet lists:
   - Comparing options → Markdown table (Strategy | How | Perf | Risk | Use when)
   - Flow/lifecycle → arrow chain: `Client → Cache → DB → Response`
@@ -234,6 +235,7 @@ If the session doesn't exist yet: `POST /api/sessions` with a full syllabus for 
 - Include memorable one-liners for interview clarity:
   - `LSP: "A caller trusted my parent's promise and I broke it at runtime." → Fix the hierarchy.`
 - Include interview rule-of-thumb lines where applicable
+- **Always capture thumb rules, points to remember, and clarifying heuristics in notes — not just in chat.** Any time you state a rule of thumb, a "never do X", a "always do Y", a mental model, or a clarifying heuristic (especially when answering a follow-up doubt), it must appear in the notes for that sub-topic. If the doubt came after the sub-topic was already saved, append it to the existing section immediately. These are the things users forget most — they must be persisted, not left in conversation history.
 
 **Score** (`POST /api/sessions/:topicSlug/scores`):
 - Score is cumulative within a session — update after each sub-topic
